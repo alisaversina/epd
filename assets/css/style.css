@@ -1,0 +1,80 @@
+        html {
+            scroll-padding-top: 70px;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f9;
+            font-size: clamp(16px, 2.5vw, 24px);
+            padding-top: 50px;
+        }
+        h1 {
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            font-weight: 700;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            font-weight: 600;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        h3 {
+            font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+            font-weight: 500;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .content, .toc {
+            display: none;
+        }
+        .content.active, .toc.active {
+            display: block;
+        }
+        .hidden {
+            display: none;
+        }
+        .table-responsive {
+            margin-top: 20px;
+        }
+        .toc {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        .toc a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .toc a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            margin-top: 50px;
+            padding: 20px 0;
+            background-color: #343a40;
+            color: #fff;
+            text-align: center;
+        }
+        footer a {
+            text-decoration: none;
+            margin: 0 10px; /* Added margin for spacing */
+        }
+        /* Mobile Adjustments */
+        @media (max-width: 990px) {
+            .navbar-nav .btn {
+                margin: 5px 0;
+            }
+            .container {
+                padding: 0 10px;
+            }
+        }
+        @media (min-width: 990px) {
+            .navbar-nav .btn {
+                margin-left: 5px;
+            }
+        }
